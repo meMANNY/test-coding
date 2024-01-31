@@ -21,6 +21,22 @@ void Insert(Node **head, int data)
     newNode->next = *head;
     *head = newNode;
 }
+
+void Insertat(Node *&head, int data, int pos)
+{
+    Node *temp = head;
+    int cnt = 1;
+
+    while (cnt < pos)
+    {
+        temp = temp->next;
+        cnt++;
+    }
+
+    Node *newNode = new Node(data);
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
 int main()
 {
     Node *node1 = new Node(10);
