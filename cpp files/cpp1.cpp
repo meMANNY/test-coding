@@ -37,6 +37,34 @@ void Insertat(Node *&head, int data, int pos)
     newNode->next = temp->next;
     temp->next = newNode;
 }
+void deleteNode(int position, Node *&head)
+{
+    Node *temp = head;
+    if (position == 1)
+    {
+        Node *temp = head;
+        head = head->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else
+    {
+        Node *curr = head;
+        Node *prev = NULL;
+
+        int cnt = 1;
+        while (cnt < position)
+        {
+            prev = curr;
+            curr = curr->next;
+            cnt++;
+        }
+        prev->next = curr->next;
+        curr->next = NULL;
+        delete curr;
+    }
+}
+
 int main()
 {
     Node *node1 = new Node(10);
