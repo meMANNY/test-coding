@@ -51,10 +51,10 @@ const pagination = (pageSize) =>{
         const endIndex = pageNumber + pageSize;
         
         req.pagination ={
-           page: pageNumber,
-           limit: pageSize,
-           startIndex,
-           endIndex, 
+        page: pageNumber,
+        limit: pageSize,
+        startIndex,
+        endIndex, 
         };
         next();
     };
