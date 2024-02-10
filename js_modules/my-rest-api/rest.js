@@ -59,7 +59,7 @@ const pagination = (pageSize) =>{
         next();
     };
 };
-app.get('/api/users', pagination(3), (req, res) => {
+app.get('/api/users', pagination(10), (req, res) => {
     const {startIndex, endIndex} = req.pagination;
     const users = data.slice(startIndex, endIndex);
 
