@@ -1,0 +1,37 @@
+[
+  {
+    "campaign_id": "FB001",
+    "budget": 500,
+    "impressions": 20000,
+    "clicks": 250,
+    "conversions": 32
+  },
+  {
+    "campaign_id": "FB002",
+    "budget": 320,
+    "impressions": 15000,
+    "clicks": 160,
+    "conversions": 20
+  },
+  {
+    "campaign_id": "FB003",
+    "budget": 750,
+    "impressions": 40000,
+    "clicks": 300,
+    "conversions": 50
+  },
+  {
+    "campaign_id": "FB004",
+    "budget": 200,
+    "impressions": 10000,
+    "clicks": 50,
+    "conversions": 4
+  },
+  {
+    "campaign_id": "FB005",
+    "budget": 900,
+    "impressions": 50000,
+    "clicks": 250,
+    "conversions": 45
+  }
+]
